@@ -1,7 +1,20 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  assetPrefix: 'https://juanmdiaz.dev',
+    async rewrites() {
+    return {
+      beforeFiles: [
+        // {
+        //   source: "/jobfinder",
+        //   destination: "https://juanmdiaz.dev/jobfinder",
+        // },
+        {
+          source: "/:path*",
+          destination: "https://jobfinder-peach-zeta.vercel.app/:path*",
+        },
+      ],
+    };
+  },
 };
 
 export default nextConfig;
