@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
           source: "/jobfinder",
           destination: "https://juanmdiaz.dev/jobfinder",
         },
+        {
+          source: "/jobfinder/:path*",
+          destination: "https://juanmdiaz.dev/jobfinder/:path*",
+        },
       ],
     };
   },
