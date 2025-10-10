@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
       beforeFiles: [
         {
           source: "/jobfinder",
-          destination: "http://juanmdiaz.dev/jobfinder",
+          destination: "https://juanmdiaz.dev/jobfinder",
         },
       ],
     };
