@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: "/jobfinder"
+  basePath: "",
+  reactStrictMode: true,
+  swcMinify: true,
 };
 
 export default nextConfig;
